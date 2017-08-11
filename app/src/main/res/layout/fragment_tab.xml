@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.ayeshashahid.tabproject.TabFragment">
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/activity_main_nestedscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_marginTop="35dp"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <ImageView
+          android:layout_width="0dip"
+          android:layout_weight="0.3"
+          android:src="@drawable/dollar"
+          android:layout_height="wrap_content" />
+  <TextView
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:text="Available Balance"
+      android:textSize="16sp"
+      android:textColor="#666"
+      android:layout_height="wrap_content" />
+      <TextView
+      android:layout_width="0dp"
+      android:layout_weight="1"
+          android:text="$ 29,278"
+          android:textSize="16sp"
+          android:textColor="@color/balanceColor"
+      android:layout_height="wrap_content" />
+  </LinearLayout>
+    <Button
+        android:background="@drawable/button_shape"
+        android:id="@+id/new_course"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:text="Create New Course"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/Color"
+        android:layout_height="37dp" />
+    <Button
+        android:id="@+id/request"
+        android:background="@drawable/button_shape"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Request Payment"
+        android:textAllCaps="false"
+        android:textColor="@color/buttonTextColor2"
+        android:layout_height="37dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>
